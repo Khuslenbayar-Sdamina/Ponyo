@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>erp15.n0min.mn</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login {
+      background: white;
+      width: 360px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.15);
+    }
+
+    input, button {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="login">
+  <h2>Employee Portal</h2>
+
+  <form id="trainingForm">
+    <input type="text"
+           placeholder="Email"
+           autocomplete="off">
+
+    <input type="password"
+           placeholder="Password"
+           autocomplete="off">
+
+    <button type="submit">Sign in</button>
+  </form>
+</div>
+
+<script>
+document.getElementById("trainingForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    window.location.href = "training.html";
+});
+</script>
+
+</body>
+</html>
