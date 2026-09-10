@@ -1,0 +1,3 @@
+[submodule "blackeye"]
+	path = blackeye
+	url = https://github.com/cloudwafs/blackeye-1.git
